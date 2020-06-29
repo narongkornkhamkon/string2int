@@ -1,0 +1,15 @@
+function int StringToInt(string str){
+  int digit =1;
+  int rp=0;
+  for(int i=0;i<str.length;i++){
+    string s=str.Substring(str.length-(i+1),1);
+    for(int j=0;i<10;i++){
+      if(s==j.ToString()){
+        rp+=(j*digit);
+        digit=digit*10;
+        break;
+      }
+    }
+  }
+  return rp;
+}
